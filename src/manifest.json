@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "PDF Solo Window",
+  "version": "1.0.0",
+  "description": "Keeps any opened PDF (local or web) in its own separate window and remembers it for the session.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "file:///*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "PDF Solo Window"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "128": "icon128.png"
+  }
+}
